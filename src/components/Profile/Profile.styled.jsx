@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-
+export const ContainerProfile = styled.div`
+margin-bottom: 20px;
 text-align: center;
 border: 2px solid #000;
 `;
@@ -14,24 +14,25 @@ margin-left: auto;
 margin-right: auto;
 `;
 
-export const Description = styled.div`
-
-`;
-
 export const UserName = styled.p`
 font-size: 44px;
 `;
 
 export const Text = styled.p`
+margin-top: 20px;
+margin-bottom: 20px;
 font-size: 30px;
 `;
 
 export const List = styled.ul`
-display: flex;
-list-style: none;
+justify-content: space-between;
+border: 2px solid #000;
 `;
 
 export const ListItem = styled.li` 
 display: flex;
 flex-direction: column;
+border-left: 2px solid #000;
+font-size: 20px;
+width: 70px
 `;

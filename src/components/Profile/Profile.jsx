@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
-import { Container, Avatar, Description, UserName, Text, List, ListItem } from './Profile.styled';
+import { ContainerProfile, Avatar, UserName, Text, List, ListItem } from './Profile.styled';
 
 const Profile = ({username, tag, location, avatar, stats}) => {
     return (
-        <Container>
-  <Description>
+        <ContainerProfile>
+  <div>
     <Avatar
       src={avatar}
       alt="User avatar"
     />
     <UserName>{username}</UserName>
-    <Text >{tag}</Text>
+    <Text >@{tag},</Text>
     <Text >{location}</Text>
-  </Description>
+  </div>
 
   <List>
     <ListItem>
@@ -28,7 +28,7 @@ const Profile = ({username, tag, location, avatar, stats}) => {
       <span className="quantity">{stats.likes}</span>
     </ListItem>
   </List>
-</Container>
+</ContainerProfile>
     );
 }
 

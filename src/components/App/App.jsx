@@ -13,9 +13,8 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
-        flexWrap: 'Wrap',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
