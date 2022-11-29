@@ -18,7 +18,7 @@ const FriendList = ({friends}) => {
     );
 }
 
-FriendList.propsTypes = {
+FriendList.propTypes = {
     friends: PropTypes.arrayOf(PropTypes.object.isRequired),
 }
 
