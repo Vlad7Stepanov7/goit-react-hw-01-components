@@ -5,7 +5,7 @@ const Statistics = ({ title, stats }) => {
     return (
  <ContainerStatistics>
             
-    {title === "Upload stats" && <Title>{title}</Title>}
+    {title && <Title>{title}</Title>}
             
   <ul>
      {stats.map(stat => (
